@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#0065ff" />
+    <title>Pushe.co - A sample for PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <link href="assets/style.css" rel="stylesheet" /> 
+</head>
+<body>
+    <div class="container">
+       <img src="assets/header.svg" class="header-img" alt="This is just a sample for PWA" />
+       <img src="assets/footer.svg" class="footer-img" alt="pushe.co" />
+    </div>
+    
+
+    <script src="assets/script.js"></script>
+    <script src="https://static.pushe.co/pusheweb.js"></script>
+    <script>
+        Pushe.init("5ej1zqwx1o4r4y4e");
+        Pushe.subscribe({
+            title: "Subscribe To Web Push Notifications",
+            content: "Do you want to get our latest news and suggestions?",
+            acceptText: "OK",
+            rejectText: "Discard",
+            style: {
+                dialogWrapper: {
+                    maxWidth: "340px",
+                    boxShadow: "unset",
+                    borderRadius: "2px",
+                    backgroundColor: "#00feb6",
+                },
+                title: {
+                    textAlign: "left",
+                    color: "#333",
+                    fontSize: "1.2rem",
+                    marginBottom: "5px",
+                },
+                content: {
+                    textAlign: "left",
+                    color: "#333",
+                    direction: "ltr",
+                    marginTop: "0",
+                },
+                buttonsWrapper: {
+                    float: "right",
+                    display: "flex",
+                    flexDirection: "row-reverse",
+                },
+                acceptButton: {
+                    borderRadius: "2px",
+                    backgroundColor: "#0065ff",
+                    fontWeight: "bold",
+                },
+                rejectButton: {
+                    borderRadius: "2px",
+                    backgroundColor: "#ffffff",
+                    fontWeight: "bold",
+                }
+            }
+        }); 
+    </script>
+</body>
+</html>

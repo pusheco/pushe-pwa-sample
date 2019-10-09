@@ -1,0 +1,23 @@
+{
+    "name": "Pushe.co",
+    "description": "A sample for PWA",
+    "short_name": "Pushe PWA",
+    "theme_color": "#0065ff",
+    "background_color": "#0065ff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "index.html",
+    "icons": [
+        {
+          "src": "assets/logo.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+            "src": "assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+    ]
+  }
