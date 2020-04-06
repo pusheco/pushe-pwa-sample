@@ -10,6 +10,11 @@ that can be installed in android devices like a native app with shorcut in **hom
 You can view the demo app in your mobile's chrome app ```https://pusheco.github.io/pushe-pwa-demo```, and after opening the web page after a couple of seconds 
 a dialog will appear in the bottom of your page, and if you click on that you can install the **PWA** app and the shortcut will appear in your **home screen**!
 
+**Important Note:**
+
+In order to use the PWA specific service worker and web notification service worker in the root scope (/) we would 
+import both servcie worker in `pushe-sw.js` service worker.
+
 # Install & Usage
 
 clone the project ```git clone git@github.com:pusheco/pushe-pwa-demo.git```
